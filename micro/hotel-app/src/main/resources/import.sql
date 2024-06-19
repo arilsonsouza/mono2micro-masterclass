@@ -5,7 +5,7 @@
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
 CREATE SEQUENCE hotels_sequence START WITH 1 INCREMENT BY 1;
--- INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 1, 5);
--- INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 2, 2);
--- INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 3, 3);
--- INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 4, 10);
+INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 1, 5);
+INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 2, 2);
+INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 3, 3);
+INSERT INTO hotels(id, orderid, nights) VALUES(nextval('hotels_sequence'), 4, 10);

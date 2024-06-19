@@ -5,7 +5,7 @@
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
 CREATE SEQUENCE orders_sequence START WITH 1 INCREMENT BY 1;
--- INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
--- INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
--- INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
--- INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
+INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
+INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
+INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
+INSERT INTO orders(id) VALUES (nextval('orders_sequence'));
