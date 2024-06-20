@@ -9,6 +9,7 @@ import org.aos.order.service.Hotel;
 import org.aos.order.service.HotelService;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import io.smallrye.common.annotation.RunOnVirtualThread;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
@@ -32,6 +33,7 @@ public class OrderResource {
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
+  @RunOnVirtualThread
   public List<OrderDTO> orders() {
     return Order.<Order>listAll().stream()
         .map(

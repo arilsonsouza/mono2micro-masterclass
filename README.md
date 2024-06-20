@@ -52,6 +52,6 @@ oc expose svc flight-app
 
 oc expose svc hotel-app
 
-oc expose svc hotel-app
+oc expose svc order-app
 
 kubectl get routes
