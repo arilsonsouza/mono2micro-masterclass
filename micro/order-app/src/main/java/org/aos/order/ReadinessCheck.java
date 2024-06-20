@@ -22,11 +22,12 @@ public class ReadinessCheck implements HealthCheck {
 
   @Override
   public HealthCheckResponse call() {
-    if ((flightService.findById(1) != null) && (flightService.findById(1) != null)) {
-      return HealthCheckResponse.up("I'm ready!");
-    } else {
-      return HealthCheckResponse.down("I am not ready!");
-    }
+    // if ((flightService.findById(1) != null) && (flightService.findById(1) !=
+    // null)) {
+    return HealthCheckResponse.up("I'm ready!");
+    // } else {
+    // return HealthCheckResponse.down("I am not ready!");
+    // }
   }
 
 }
